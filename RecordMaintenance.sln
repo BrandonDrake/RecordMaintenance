@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordMaintenance", "RecordMaintenance\RecordMaintenance.csproj", "{942E1BE3-BF13-48F7-B1CF-E2534484AA2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordMaintenanceTests2", "RecordMaintenanceTests2\RecordMaintenanceTests2.csproj", "{256C3CB5-7E18-4C68-8754-3D5E1D613126}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{942E1BE3-BF13-48F7-B1CF-E2534484AA2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{942E1BE3-BF13-48F7-B1CF-E2534484AA2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{942E1BE3-BF13-48F7-B1CF-E2534484AA2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{942E1BE3-BF13-48F7-B1CF-E2534484AA2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{256C3CB5-7E18-4C68-8754-3D5E1D613126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{256C3CB5-7E18-4C68-8754-3D5E1D613126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{256C3CB5-7E18-4C68-8754-3D5E1D613126}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{256C3CB5-7E18-4C68-8754-3D5E1D613126}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA723905-7B27-4C34-9F4A-F8524E772D03}
+	EndGlobalSection
+EndGlobal

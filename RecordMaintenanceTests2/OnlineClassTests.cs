@@ -12,7 +12,7 @@ namespace RecordMaintenance.Tests
     public class OnlineClassTests
     {
         [TestMethod()]
-        public void OnlineClassTest()
+        public void InheritanceOnlineClassTest()
         {
             //Arrange
             var expected = "Class Name(IT412), URL(www.123.com), Browser(Firefox)";

@@ -22,7 +22,7 @@ namespace RecordMaintenance
             this.Name = name;
             this.URL = URL;
             this.Browser = browser;
-            base.ClassType = TypeOfClass.Online;
+            ClassType = TypeOfClass.Online;
         }
 
         public OnlineClass(Classes baseClass, string name, string URL, string browser) : base(baseClass)
@@ -30,14 +30,14 @@ namespace RecordMaintenance
             this.Name = name;
             this.URL = URL;
             this.Browser = browser;
-            base.ClassType = TypeOfClass.Online;
+            ClassType = TypeOfClass.Online;
         }
         #endregion
 
         #region Properties
-        public String Name { get; set; }
-        public String URL { get; set; }
-        public String Browser { get; set; }
+        public string Name { get; set; }
+        public string URL { get; set; }
+        public string Browser { get; set; }
        
 
         #endregion

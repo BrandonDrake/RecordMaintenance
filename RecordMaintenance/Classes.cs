@@ -9,12 +9,6 @@ namespace RecordMaintenance
     /// 
     public class Classes
     {
-        #region fields
-
-        
-
-        #endregion
-
         #region Constructors
         public Classes(){ }
 
@@ -36,6 +30,31 @@ namespace RecordMaintenance
             ClassType = classType;
         }
 
+        public Classes(string courseID, DateTime beginDate, DateTime endDate, string className, string url, string browser, TypeOfClass classType = TypeOfClass.Online) : this(courseID, beginDate, endDate)
+        {
+            ClassType = classType;
+
+            OnlineClassInfo = new OnlineClass()
+            {
+                Name = className,
+                URL = url,
+                Browser = browser
+            };
+        }
+
+        public Classes(string courseID, DateTime beginDate, DateTime endDate, string className, string building, int roomNumber, TypeOfClass classType = TypeOfClass.Face_to_Face) : this(courseID, beginDate, endDate)
+        {
+            ClassType = classType;
+
+            F2FClassInfo = new FaceToFace()
+            {
+                ClassName = className,
+                Building = building,
+                RoomNumber = roomNumber
+            };
+
+        }
+       
         public Classes(Classes baseClass) : this(baseClass.ClassCourseID, baseClass.BeginDate, baseClass.EndDate)
         {
 
@@ -103,6 +122,21 @@ namespace RecordMaintenance
         {
             string classes = $"Course ID({ClassCourseID}), Begin Date({BeginDate}), End Date({EndDate}), Class Type({ClassType})";
 
+            if(OnlineClassInfo != null)
+            {
+                if(!string.IsNullOrWhiteSpace(OnlineClassInfo.Name))
+                {
+                    classes += $", Class Name({OnlineClassInfo.Name}), URL({OnlineClassInfo.URL}), Browser({OnlineClassInfo.Browser})";
+                }
+            }
+
+            if(F2FClassInfo != null)
+            {
+                if (!string.IsNullOrWhiteSpace(F2FClassInfo.ClassName))
+                {
+                    classes += $", Class Name({F2FClassInfo.ClassName}), Building({F2FClassInfo.Building}), Room Number({F2FClassInfo.RoomNumber})";
+                }
+            }
             return classes;
         }
         #endregion
